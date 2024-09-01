@@ -98,7 +98,14 @@
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0.1;
     z-index: -1; 
 	margin: auto;
+}
+@media only screen and (max-width:768px) {
+	.feature-card::before {
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+	}
 }
