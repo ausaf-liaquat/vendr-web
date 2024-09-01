@@ -102,6 +102,82 @@
     z-index: -1; 
 	margin: auto;
 }
+
+
+.service-card3 .service-card-icon img {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin: 8px 9px;
+    height: 95px;
+    width: 95px;
+}
+
+.service-card3 .service-card-icon:after {
+    content: '';
+    position: absolute;
+    border: 1px dashed #ef476f;
+    inset: -12px;
+    border-radius: 50%;
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+.service-card3:after {
+    content: '';
+    position: absolute;
+    background: #ef476f;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: circle(103% at 50% -165px);
+    clip-path: circle(103% at 50% -165px);
+    opacity: 0.1;
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+.service-card3:hover:after {
+    background: black;
+}
+
+.service-card3:hover .service-card-icon {
+    background: black;
+}
+
+.service-card3:hover .service-card-icon img {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.service-card3:hover .service-card-icon:after {
+    border-color: black;
+}
+
+
+@media (max-width: 767px) {
+    .service-card3:after {
+        -webkit-clip-path:circle(100% at 50% -265px);
+        clip-path: circle(100% at 50% -265px)
+    }
+}
+
+@media (max-width: 575px) {
+    .service-card3:after {
+        -webkit-clip-path:circle(100% at 50% -206px);
+        clip-path: circle(100% at 50% -206px)
+    }
+}
+
+@media (max-width: 375px) {
+    .service-card3:after {
+        -webkit-clip-path:circle(84% at 50% -122px);
+        clip-path: circle(84% at 50% -122px)
+    }
+}
+
 @media only screen and (max-width:768px) {
 	.feature-card::before {
 		height: 100%;

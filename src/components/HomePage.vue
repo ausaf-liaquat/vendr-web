@@ -2,7 +2,7 @@
 import Navbar from './Navbar.vue';
 import Banner from './Banner.vue';
 import Features from './Features.vue';
-
+import Facilities from './Facilities.vue';
 
 export default {
   name: 'HomePage',
@@ -10,6 +10,7 @@ export default {
     Navbar,
     Banner,
     Features,
+    Facilities,
   }
 };
 </script>
@@ -19,6 +20,7 @@ export default {
     <Navbar />
     <Banner />
     <Features />
+    <Facilities />
    
 </template>
 
