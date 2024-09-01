@@ -1,0 +1,16 @@
+<svg width="140.998" height="31.5" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="19.624749" height="5.9375" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <g id="svg_2">
+    <text fill="#323232" stroke-width="0" x="1.700202" y="30.70388" id="svg_12" font-size="41" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve">Vendr</text>
+   </g>
+   <circle fill="#ef476f" cx="111.233072" cy="27.376405" r="3.589" id="svg_9"/>
+  </g>
+ </g>
+</svg>

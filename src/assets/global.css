@@ -1,0 +1,104 @@
+/* button style */
+.btn {
+	user-select: none;
+	-moz-user-select: none;
+	background: #ef476f none repeat scroll 0 0;
+	border: medium none;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 0;
+	line-height: 1.4;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	-webkit-transition-duration: 800ms;
+	transition-duration: 800ms;
+	width: 200%;
+	height: 200%;
+	top: 110%;
+	left: 50%;
+	background: #ef476f;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 50%;
+	z-index: -1;
+}
+.btn:hover {
+	color: #fff;
+}
+.btn-two {
+	background: #ef476f none repeat scroll 0 0;
+}
+.btn-two::before {
+	background: #1d3a72;
+}
+.btn:hover:before {
+	top: -40%;
+}
+@keyframes float-bob3 {
+    0% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-25px);
+        transform: translateY(-25px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+}
+@keyframes snowRot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animName {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.feature-card {
+    position: relative; 
+}
+
+.feature-card::before {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('../assets/shape.png');
+    width: 500px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1; 
+	margin: auto;
+}
